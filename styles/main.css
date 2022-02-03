@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: blue;
+    display: flex;
+    gap: 5vw;
+    padding-left: 20vw;
+    line-height: 2;
+}
+
+.footer {
+    bottom: 0px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: blue;
+    line-height: 2;
+}

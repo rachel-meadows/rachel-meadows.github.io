@@ -1,0 +1,28 @@
+#main-intro {
+    font-size: 3rem;
+}
+
+#header {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: blue;
+}
+
+#about {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-title {
+    align-self: center;
+    margin-top: 40px;
+}
+
+#about-contents {
+    margin-left: 20vw;
+}
