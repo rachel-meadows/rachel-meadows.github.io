@@ -5,6 +5,23 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+caption, .caption {
+    font-size: 1em;
+    text-align: center;
+    align-self: center;
+}
+
 a:hover {
     cursor: pointer;
 }
@@ -62,10 +79,22 @@ h2 {
     flex-shrink: 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
     background-color: #1B98E0;
-    line-height: 2.5;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.footer-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+br {
+    margin-top: 10px;
 }
 
 button {
