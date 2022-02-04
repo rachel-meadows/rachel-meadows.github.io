@@ -2,6 +2,15 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #E8F1F2;
 }
 
 .container {
@@ -10,11 +19,42 @@
 }
 
 .menu {
-    background-color: blue;
+    background-color: #1B98E0;
     display: flex;
     gap: 5vw;
     padding-left: 20vw;
-    line-height: 2;
+    line-height: 2.5;
+    font-weight: 700;
+}
+
+.home-button, .blog-button, .fun-button {
+    color: #0F2132;
+}
+
+hr {
+    width: 60%;
+    align-self: center;
+    border: none;
+    border-top: 3px double #0F2132;
+    color: #13293D;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #E8F1F2;
+    content: ' § ';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+h2 {
+    align-self: center;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Merienda One', 'Segoe UI', sans-serif;
 }
 
 .footer {
@@ -24,6 +64,23 @@
     justify-content: center;
     gap: 10px;
     width: 100%;
-    background-color: blue;
-    line-height: 2;
+    background-color: #1B98E0;
+    line-height: 2.5;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #40C4A6;
+    box-shadow: 1px 2px 2px #28836e;
+    width: fit-content;
+    padding: 7px 20px;
+    color: #0F2132;
+    border: 1px #2d927bde;
+    border-style: none solid solid none;
+    border-radius: 6px;
+}
+
+button:hover {
+    cursor: pointer;
 }
