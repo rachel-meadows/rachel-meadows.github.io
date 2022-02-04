@@ -124,3 +124,12 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+.quote {
+    padding: 5px 20px;
+    background-color: rgba(187, 187, 187, 0.5);
+    width: fit-content;
+    border-left: 10px solid rgba(138, 138, 138, 0.6);
+    border-radius: 0px 5px 5px 0px;
+    margin: 2px 0px 5px 0px;
+}
