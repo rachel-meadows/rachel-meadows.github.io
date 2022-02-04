@@ -1,3 +1,7 @@
 .fun-button {
     color: #E8F1F2;
 }
+
+.home-button:hover, .blog-button:hover {
+    color: hsl(209, 54%, 23%);
+}

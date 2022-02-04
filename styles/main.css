@@ -133,3 +133,21 @@ button:hover {
     border-radius: 0px 5px 5px 0px;
     margin: 2px 0px 5px 0px;
 }
+
+.main-content-container {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-content {
+    margin-left: 20vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}

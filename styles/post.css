@@ -1,0 +1,27 @@
+#navigation {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+.current-post {
+    color: white;
+}
+
+.no-nav {
+    background-color: #a0a0a0;
+    box-shadow: 1px 2px 2px #7a7a7a;
+    color: #3f3f3f;
+    border: 1px #1a1a1ade;
+}
+
+.no-nav:hover {
+    cursor: default;
+}
+
+.home-button:hover, .blog-button:hover, .fun-button:hover {
+    color: hsl(209, 54%, 23%);
+}
