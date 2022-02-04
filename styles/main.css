@@ -22,6 +22,10 @@ caption, .caption {
     align-self: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     cursor: pointer;
 }
@@ -76,7 +80,6 @@ h2 {
 
 .footer {
     bottom: 0px;
-    flex-shrink: 0;
     display: flex;
     justify-content: center;
     gap: 15px;
