@@ -2,6 +2,14 @@
     color: #E8F1F2;
 }
 
+a {
+    color: #0F2132;
+}
+
+a:hover {
+    color: black;
+}
+
 .home-button:hover, .fun-button:hover {
     color: hsl(209, 54%, 23%);
 }
@@ -31,12 +39,14 @@
 
 .coming-soon-post:hover {
     cursor: default;
+    color: #3f3f3f;
 }
 
 #grid-container {
     width: 80vw;
     height: 60vh;
     align-self: center;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;

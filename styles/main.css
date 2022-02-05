@@ -155,3 +155,30 @@ button:hover {
 .main-heading-secondary-page {
     margin-top: 40px;
 }
+
+@media (max-width: 1200px) {
+    .main-content {
+        margin-left: 15vw;
+        width: 70vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-content {
+        margin-left: 10vw;
+        width: 80vw;
+        flex-direction: column;
+    }
+}
+
+/* Phones */
+@media (max-width: 500px) {
+    .main-content {
+        margin-left: 15px;
+        width: calc(100vw - 30px);
+    }
+    .menu {
+        justify-content: center;
+        padding-left: 0px;
+    }
+}
