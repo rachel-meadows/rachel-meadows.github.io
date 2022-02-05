@@ -58,6 +58,14 @@
         text-align: center;
         font-size: 1.8rem;
     }
+    .right-text {
+        order: 1;
+        margin-top: 40px;
+        margin-bottom: -10px;
+    }
+    #spider-container, #seal {
+        order: 2;
+    }
 }
 
 /* ------------------------------ */
@@ -490,27 +498,25 @@
     display: flex;
     justify-content: stretch;
     width: 500px;
+    height: 300px;
 }
 
 #spider-left-third {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
 }
 
 #spider-right-third {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
 }
 
 #spider-center-third {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
     z-index: 2;
     justify-content: center;
 }
@@ -622,7 +628,7 @@
 
 #spider-leg-4,
 #spider-leg-8 {
-    margin-top: 220px;
+    margin-top: 140px;
 }
 
 @keyframes eye-movement {
