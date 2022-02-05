@@ -2,7 +2,7 @@
     color: #E8F1F2;
 }
 
-.blog-button:hover, .fun-button:hover {
+ .blog-button:hover, .fun-button:hover {
     color: hsl(209, 54%, 23%);
 }
 

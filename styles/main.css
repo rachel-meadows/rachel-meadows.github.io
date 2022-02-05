@@ -140,7 +140,6 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .main-content {
@@ -150,4 +149,8 @@ button:hover {
     flex-direction: row;
     gap: 15px;
     justify-content: center;
+}
+
+.main-heading-secondary-page {
+    margin-top: 40px;
 }
