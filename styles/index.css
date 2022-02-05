@@ -62,3 +62,41 @@
 #self {
     border-radius: 5px;
 }
+
+
+@media (max-width: 1200px) {
+    .main-content {
+        margin-left: 15vw;
+        width: 70vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-content {
+        margin-left: 10vw;
+        width: 80vw;
+        flex-direction: column;
+    }
+}
+
+/* Phones */
+@media (max-width: 500px) {
+    .main-content {
+        margin-left: 0vw;
+        width: 100vw;
+    }
+    #main-intro {
+        font-size: 2.5rem;
+    }
+    #header-text {
+        max-width: 80vw;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    #header {
+        min-height: 220px;
+    }
+    #about-photo {
+        align-self: center;
+    }
+}

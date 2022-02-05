@@ -23,7 +23,7 @@
     font-weight: 400;
     transform: skew(167deg) rotate(-5deg);
     margin-top: -10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #header {
@@ -49,6 +49,18 @@
     background-color: #E8F1F2;
     padding-bottom: 50px;
 }
+
+@media (max-width: 500px) {
+    .single-block {
+        flex-direction: column;
+    }
+    .main-heading-secondary-page {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+/* ------------------------------ */
 
 /* Seal */
 
