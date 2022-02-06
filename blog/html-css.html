@@ -28,11 +28,34 @@
       <div class="main-content-container">
         <div class="main-content">
           <div class="about-text">
-            <h3>Sprint</h3>
-            <p>Text text text text text text text text text text text text text text text text text text text text text text text.</p>
+            <h3>What is positioning in CSS?</h3>
+            <p>CSS lets you style elements on your page, including where they are and how they look. CSS has a special rule called the <code>position</code> property. This property is applied to a specific element on the page, and determines <em>where</em> on the page that element is displayed.</p>
+            <p>There are five <code>position</code> values that can be applied to an element:</p>
+            <ul>
+              <li><code>static</code></li>
+              <li><code>relative</code></li>
+              <li><code>fixed</code></li>
+              <li><code>absolute</code></li>
+              <li><code>sticky</code></li>
+            </ul>
+            <p>In this blog post, we'll look at the <code>relative</code>, <code>absolute</code>, and <code>fixed</code> positioning properties.</p>
+            
             <br>
-            <h3>Subtitle</h3>
-            <p>Text text text text text text text text text text text text text text text.</p>
+
+            <h3>What's the difference between relative, absolute, and fixed positioning?</h3>
+            <h4>Relative</h4>
+            <p>With relative positioning, the element is positioned <em>relative</em> to its normal position. In other words, the element sits in its normal position by default, and you can move it around from there. You do this using the properties of <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>.
+            <p>For example, <code>top: 45px</code> adds 45px to the element's 'top' position, which would push it down the page by 45 pixels.</p>
+            <h4>Absolute</h4>
+            <p>If the <code>absolute</code> property is applied, the element is positioned <em>relative</em> to the first one of the previous elements to have a positioning property applied (other than <code>static</code>, which is the default).</p>
+            <p>If the element has <em>no</em> previous elements with a positioning property applied, the element is positioned relative to the document body instead. As a result, in this situation the element will move as the page is scrolled.</p>
+            <p>Absolute elements can overlap other elements.</p>
+            <p>For example, an absolute element with the properties of <code>top: 0px</code> and <code>right: 0px</code> would sit on the top right of the page, overlapping any previous positioned elements or the body of the page itself.</p>
+            <img class="blog-image" alt="Blue absolute div overlapping a red relative div" src="../images/sprint-2-html-css-absolute.png"/>
+            <h4>Fixed</h4>
+            <p>With <code>fixed</code> positioning, the element's positioning is relative to the user's browser window. This means that no matter how much the user scrolls up or down, the fixed element will always appear in the same spot.</p>
+            <p>For example, a fixed element with the properties of <code>top: 10px</code> and <code>left: 10px</code> would sit 10px away from the top left of the screen, no matter how far the user scrolls down the page.</p>
+            <img class="blog-image" alt="Blue fixed div overlapping a red body element" src="../images/sprint-2-html-css-fixed.png"/>
           </div>
         </div>
         <div id="navigation">

@@ -156,6 +156,20 @@ button:hover {
     margin-top: 40px;
 }
 
+code {
+    display: inline-block;
+    background-color: rgb(209, 209, 209);
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+ul {
+    margin-left: 3vw;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 1200px) {
     .main-content {
         margin-left: 15vw;

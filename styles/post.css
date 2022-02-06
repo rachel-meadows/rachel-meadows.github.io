@@ -36,3 +36,9 @@
 .home-button:hover, .blog-button:hover, .fun-button:hover {
     color: hsl(209, 54%, 23%);
 }
+
+.blog-image {
+    width: 60%;
+    margin-left: 25%;
+    height: auto;
+}

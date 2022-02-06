@@ -13,6 +13,11 @@ a:hover {
 .home-button:hover, .fun-button:hover {
     color: hsl(209, 54%, 23%);
 }
+
+.blog-button:hover {
+    color: white;
+}
+
 .post {
     border-radius: 6px;
     background-color: #40C4A6;
