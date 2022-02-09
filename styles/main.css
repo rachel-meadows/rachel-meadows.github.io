@@ -150,6 +150,7 @@ button:hover {
     flex-direction: row;
     gap: 15px;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .main-heading-secondary-page {
