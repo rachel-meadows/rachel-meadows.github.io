@@ -157,7 +157,7 @@ button:hover {
     margin-top: 40px;
 }
 
-code {
+.code {
     display: inline-block;
     background-color: rgb(209, 209, 209);
     padding: 3px 7px;

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachel Meadows</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/post.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="content">
+      <div class="menu">
+        <a class="home-button" href="../index.html">HOME</a>
+        <a class="blog-button" href="../blog.html">BLOG ▶ <span class="current-post">JavaScript DOM</span></a>
+        <a class="fun-button" href="../fun.html">FUN</a>
+      </div>
+
+      <h2 class="main-heading-secondary-page">The JavaScript DOM</h2>
+      <div class="main-content-container">
+        <div class="main-content">
+          <div class="about-text">
+            <h3>HTML and CSS</h3>
+            <p>HTML is like the chassis (frame) of a car. It has a structure, and different parts have different functionalities, but it's not exactly comfortable or easy to use.</p>
+            <img src="https://plsadaptive.s3.amazonaws.com/eco/images/channel_content/images/chassis_systems_survey.jpg" class="blog-image">
+            <p>In contrast, CSS is like the seat padding, the glossy wax finish, and all the bits and bobs that, while not <em>strictly</em> necessary for use, make the ride a lot more comfortable!</p>
+            <img src="https://www.tyrepress.com/wp-content/uploads/2015/07/All-New-Ford-Fiesta-BlueCar.jpg" class="blog-image">
+            <p>(In this analogy, JavaScript would be like the ability to unlock the car, to turn on the GPS and stereo, and to actually drive away!)</p>
+            <br>
+            <h3>Control flow and loops</h3>
+            <p>The 'control flow' of a program is the sequence of actions that are taken, and in which order. JavaScript programs run from top to bottom (<a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting">with a couple of exceptions</a>), but along the way they may take 'side paths' to carry out a subsequence before returning to the main flow.</p>
+            <p>For example, if you describe the process of making a peanut butter sandwich, it looks pretty linear, right?</p>
+            <ol>
+              <li>Get two pieces of bread</li>
+              <li>Get some peanut butter</li>
+              <li>Put the peanut butter on one slice of bread</li>
+              <li>Press the two pieces of bread together</li>
+            </ol>
+            <p>But not so fast! What if you're out of bread or peanut butter? Then you'd have to give up, or use a substitute. The main control flow is still the same, but let's add some conditional statements and loops in there:</p>
+            <ol>
+              <li>Get two pieces of bread</li>
+                <ol>
+                  <li>If there is less than one bread slice, abandon your sandwich</li>
+                </ol>
+              <li>Get some peanut butter</li>
+                <ol>
+                  <li>If there is no peanut butter, use jam</li>
+                  <li>Else if there is no jam, use honey</li>
+                  <li>Otherwise abandon your sandwich</li>
+                </ol>
+              <li>Put the spread on one slice of bread</li>
+                <ol>
+                  <li>Start from one corner of the bread</li>
+                  <li>While the bread is not covered in spread, keep going</li>
+                </ol>   
+              <li>Press the two pieces of bread together</li>
+            </ol>
+            <p>That looks a whole lot more complicated - but the overarching control structure is still the same. It's just that each part of that overarching structure may have sub-parts, or need to 'jump around' the control flow.</p>
+            <br>
+            <h3>DOM interaction</h3>
+            <p>The 'DOM' stands for the 'Document Object Model'. This is a model of all the HTML objects in a page that the browser builds when the page is first loaded. It is a hierarchical structure, and shows how each of these elements relate to one another.</p>
+            <p>The DOM is an interface, and its purpose is to allow programming languages (such as JavaScript) to access the page content in a way they understand. It allows us to access, change, add and remove HTML elements on a page.</p>
+            <p>For example, we might use the command <span class="code">let h1 = document.querySelector('h1')</span> to get the first h1 header link and assign it to the variable 'let', then <span class="code">h1.classList.add('extraBold')</span> to give it the class 'extraBold'. In this way we can dynamically change the HTML of the page, and if we've styled this class in our CSS the header font will become bold.</p>
+            <br>
+            <h3>Accessing data from arrays vs. objects</h3>
+            <p>An array is an ordered series of values, each of which has an index. The indices begin at 0 and end at the length of the list minus one. In contrast, an object is an unordered collection of 'key-value pairs' (paired titles, or 'keys', and data, or 'values').</p>
+            <p> </p>
+            <p>Object contents can be accessed either through dot notation or bracket notation. For example, if you had the object 'Customer' that looked like this: <span class="code">Customer { cash: 0, name: "A. Customer", attitude: belligerent }</span>, you could use the code <span class="code">customer.cash</span> or <span class="code">customer[cash]</span> to retrieve the value '0'. However, to get the name of the customer you would have to use bracket notation, as the value 'A. Customer' contains multiple words.</p>
+            <br>
+            <h3>Functions</h3>
+            <p>Functions are a way of allowing us to 'reuse' code, so we don't have to write the same code over and over again with different hard-coded values. For example, say you wanted to print every number from 1 to 100. You could waste a lot of time writing code that looks like this...</p>
+            <span class="code">console.log(1)</span>
+            <span class="code">console.log(2)</span>
+            <span class="code">console.log(3)</span>
+            <span class="code">...and so on for another 97 lines...</span>
+            But why would you? It will make your code more reliable, easier to update, and far more readable to use a function instead. It will also save you a lot of manual typing! So instead, you could just write this:
+            <span class="code">function printNumbers() { for (let i = 1; i <= 100; i++) { console.log(i) } }</span>
+            <p>Now, whenever you call <span class="code">printNumbers</span>, you'll get the result you intended - and you can do it from anywhere in the control flow, as many times as you'd like.</p>
+          </div>
+        </div>
+        <div id="navigation">
+          <a href="identity-values.html"><button class="navigation-button">Prev post</button></a>
+          <a href="#"><button class="navigation-button no-nav">Next post</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <a href="https://www.linkedin.com/in/rachel-meadows/" target="_blank"><img id="linkedin" class="footer-image" src="../images/linkedin.png" alt="LinkedIn logo"></a>
+      <a href="https://github.com/rachel-meadows" target="_blank"><img id="github" class="footer-image" src="../images/github.png" alt="Github logo"></a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
