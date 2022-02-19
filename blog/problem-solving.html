@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Meadows</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/post.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="content">
+            <div class="menu">
+                <a class="home-button" href="../index.html">HOME</a>
+                <a class="blog-button" href="../blog.html">BLOG ▶ <span class="current-post">Problem solving</span></a>
+                <a class="fun-button" href="../fun.html">FUN</a>
+            </div>
+
+            <h2 class="main-heading-secondary-page">Problem Solving</h2>
+            <div class="main-content-container">
+                <div class="main-content">
+                    <div class="about-text">
+                        <h3>"A time you got blocked on a simple problem"</h3>
+                        <p>I've been doing a few coding exercises outside of this course to help me learn the JavaScript
+                            syntax and expose myself to more concepts. My technique has been to do the questions
+                            alongside a tutorial or textbook to understand the concept, then to do that same question
+                            again the next day on my own.</p>
+                        <p><a href="https://leetcode.com/problems/container-with-most-water/" target="_blank">One of these problems</a>
+                            had me completed blocked today.
+                            I knew the theory on how to solve it from learning the day before, and in the test
+                            case my code worked perfectly, but it kept failing something in the full suite of tests.</p>
+                        <p>The problem solving technique I used initially was to try to isolate the problem. I added a
+                            <span class="code">console.log</span> for every substep of the calculation, then manually
+                            worked out what the answer should have been at each point. I realised that the code was
+                            continuing to iterate longer than it should have, in ways that sometimes gave the right
+                            answer and sometimes didn't. I was feeling pretty frustrated at this point so took a few
+                            deep breaths, and this helped me realise the structure I was using (a <span
+                                  class="code">for</span>
+                            loop) was completely wrong, as the way I'd set up the code would only work with a <span
+                                  class="code">do-while</span> loop.
+                        </p>
+                        <p>What I learned from this is to start by working through each step of the problem from a
+                            high-level view
+                            - I spent nearly 30 minutes bogged down in implementation within the loop, but I
+                            hadn't even thought to question the structure itself.</p>
+                        <br>
+                        <h3>"A time you solved a problem in an elegant way"</h3>
+                        <p>I don't want to spoil the Sprint 4 content for anyone, so will stick to outside-the-course
+                            examples. There was
+                            <a href="https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/" target="_blank">one exercise</a>
+                            I did manage to solve on my own, which was pretty cool. Basically the problem was to take a
+                            list of numbers, then pair up all the numbers in a way that the largest sum of a
+                            pair was kept as low as possible. I figured I could just sort the array of numbers (though I
+                            did have to Google how to do this!), then take the smallest and the biggest
+                            number and pair them, then the second-smallest and second-biggest, and so on.
+                        </p>
+                        <p>This was still a little frustrating at times as I ran into problems with syntax, but all in
+                            all it felt way better because I could see the overarching 'point' of the program, so I was
+                            confident it would work if I could just figure out all the substeps.</p>
+                        <p>What I learned from this experience is that understanding what is going on in a program, and
+                            <strong>why</strong>, is essential to getting it to work - but also is essential to staying
+                            calm
+                            and
+                            motivated! I think it's shown me that if I don't fully understand
+                            something at the start, I
+                            shouldn't even touch the keyboard until I've actually worked what I'm doing. Otherwise I
+                            waste time and get frustrated over implementation without making any real headway.
+                        </p>
+                        <br>
+                        <h3>Confidence with problem-solving techniques</h3>
+                        <p>
+                        <ul>
+                            <strong>
+                                <li>Pseudocode</li>
+                            </strong>
+                            <ul>
+                                <li>I feel pretty good about this, though I try to use a bit of JavaScript syntax in my
+                                    pseudocode when possible, to reduce the mental load of translating it to real code.
+                                </li>
+                            </ul>
+                            <strong>
+                                <li>Trying something</li>
+                            </strong>
+                            <ul>
+                                <li>I'm confident in trying different approaches - maybe too confident, since I
+                                    sometimes jump in too quickly without thinking through all the limitations of the
+                                    approach. I'm working on fixing this!</li>
+                            </ul>
+                            <strong>
+                                <li>Rubber ducky method</li>
+                            </strong>
+                            <ul>
+                                <li>I keep a little rubber duck picture at the top of my notes, and explain everything I
+                                    learn to him :) This is really useful, because I quickly find out what I don't
+                                    really
+                                    know!</li>
+                            </ul>
+                            <strong>
+                                <li>Reading error messages</li>
+                            </strong>
+                            <ul>
+                                <li>I'm pretty good about reading and Googling these, though I don't always understand
+                                    what they're trying to convey.</li>
+                            </ul>
+
+                            <strong>
+                                <li>Console.logging</li>
+                            </strong>
+                            <ul>
+                                <li>I feel a little <em>too</em> reliant on this one!</li>
+                            </ul>
+                            <strong>
+                                <li>Googling</li>
+                            </strong>
+                            <ul>
+                                <li>I Google a lot, mostly for syntax issues.</li>
+                            </ul>
+                            <strong>
+                                <li>Asking your peers for help</li>
+                            </strong>
+                            <ul>
+                                <li>I feel pretty uncomfortable doing this, but will if I really have to.</li>
+                            </ul>
+                            <strong>
+                                <li>Asking coaches for help</li>
+                            </strong>
+                            <ul>
+                                <li>I'm pretty comfortable with this.</li>
+                            </ul>
+                            <strong>
+                                <li>Improving your process with reflection</li>
+                            </strong>
+                            <ul>
+                                <li>The reflection process has been a neat experience, so I'm trying to keep it up while
+                                    learning even when there's no reflection prompt. I do struggle to be
+                                    consistent with this, so it's a work in progress.</li>
+                            </ul>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div id="navigation">
+                    <a href="neuroplasticity.html"><button class="navigation-button">Prev post</button></a>
+                    <a href="#"><button class="navigation-button no-nav">Next post</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/rachel-meadows/" target="_blank"><img id="linkedin" class="footer-image" src="../images/linkedin.png" alt="LinkedIn logo"></a>
+            <a href="https://github.com/rachel-meadows" target="_blank"><img id="github" class="footer-image" src="../images/github.png" alt="Github logo"></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

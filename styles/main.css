@@ -169,6 +169,7 @@ button:hover {
 ul {
     margin-left: 3vw;
     margin-bottom: 10px;
+    font-size: 1.05em;
 }
 
 @media (max-width: 1200px) {
