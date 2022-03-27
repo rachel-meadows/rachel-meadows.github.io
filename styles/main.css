@@ -1,200 +1,202 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-
 p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .caption {
-    font-size: 1em;
-    text-align: center;
-    align-self: center;
+  font-size: 1em;
+  text-align: center;
+  align-self: center;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-    background-color: #E8F1F2;
+  background-color: #e8f1f2;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    min-height:100vh;
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .menu {
-    background-color: #1B98E0;
-    display: flex;
-    gap: 5vw;
-    padding-left: 20vw;
-    line-height: 2.5;
-    font-weight: 700;
+  background-color: #1b98e0;
+  display: flex;
+  gap: 5vw;
+  padding-left: 20vw;
+  line-height: 2.5;
+  font-weight: 700;
 }
 
-.home-button, .blog-button, .fun-button {
-    color: #0F2132;
+.home-button,
+.blog-button,
+.fun-button {
+  color: #0f2132;
 }
 
 hr {
-    width: 60%;
-    align-self: center;
-    border: none;
-    border-top: 3px double #0F2132;
-    color: #13293D;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
+  width: 60%;
+  align-self: center;
+  border: none;
+  border-top: 3px double #0f2132;
+  color: #13293d;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
 }
 
 hr:after {
-    background: #E8F1F2;
-    content: ' § ';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
+  background: #e8f1f2;
+  content: ' § ';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
 }
 
 h2 {
-    align-self: center;
-    padding-bottom: 20px;
-    font-size: 2rem;
-    font-family: 'Merienda One', 'Segoe UI', sans-serif;
+  align-self: center;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Merienda One', 'Segoe UI', sans-serif;
 }
 
 .footer {
-    bottom: 0px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-    background-color: #1B98E0;
-    align-items: center;
-    padding: 10px 0 10px 0;
-    position: static;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  background-color: #1b98e0;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  position: static;
 }
 
 .footer-image {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 br {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 button {
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: #40C4A6;
-    box-shadow: 1px 2px 2px #28836e;
-    width: fit-content;
-    padding: 7px 20px;
-    color: #0F2132;
-    border: 1px #2d927bde;
-    border-style: none solid solid none;
-    border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #40c4a6;
+  box-shadow: 1px 2px 2px #28836e;
+  width: fit-content;
+  padding: 7px 20px;
+  color: #0f2132;
+  border: 1px #2d927bde;
+  border-style: none solid solid none;
+  border-radius: 6px;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .quote {
-    padding: 5px 20px;
-    background-color: rgba(187, 187, 187, 0.5);
-    width: fit-content;
-    border-left: 10px solid rgba(138, 138, 138, 0.6);
-    border-radius: 0px 5px 5px 0px;
-    margin: 2px 0px 5px 0px;
+  padding: 5px 20px;
+  background-color: rgba(187, 187, 187, 0.5);
+  width: fit-content;
+  border-left: 10px solid rgba(138, 138, 138, 0.6);
+  border-radius: 0px 5px 5px 0px;
+  margin: 2px 0px 5px 0px;
 }
 
 .main-content-container {
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 40px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
 }
 
 .main-content {
-    margin-left: 20vw;
-    width: 60vw;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    align-items: flex-start;
+  margin-left: 20vw;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .main-heading-secondary-page {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .code {
-    display: inline-block;
-    background-color: rgb(209, 209, 209);
-    padding: 3px 7px;
-    border-radius: 5px;
-    font-family: monospace;
-    font-weight: 600;
+  display: inline-block;
+  background-color: rgb(209, 209, 209);
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-weight: 600;
 }
 
 ul {
-    margin-left: 3vw;
-    margin-bottom: 10px;
-    font-size: 1.05em;
+  margin-left: 3vw;
+  margin-bottom: 10px;
+  font-size: 1.05em;
 }
 
+/* Below desktop / laptop */
 @media (max-width: 1200px) {
-    .main-content {
-        margin-left: 15vw;
-        width: 70vw;
-    }
+  .main-content {
+    margin-left: 15vw;
+    width: 70vw;
+  }
 }
 
-@media (max-width: 800px) {
-    .main-content {
-        margin-left: 10vw;
-        width: 80vw;
-        flex-direction: column;
-    }
+/* Tablet portrait */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 10vw;
+    width: 80vw;
+    flex-direction: column;
+  }
 }
 
-/* Phones */
-@media (max-width: 500px) {
-    .main-content {
-        margin-left: 15px;
-        width: calc(100vw - 30px);
-    }
-    .menu {
-        justify-content: center;
-        padding-left: 0px;
-    }
+/* Phones - mobile portrait */
+@media (max-width: 320px) {
+  .main-content {
+    margin-left: 15px;
+    width: calc(100vw - 30px);
+  }
+  .menu {
+    justify-content: center;
+    padding-left: 0px;
+  }
 }
